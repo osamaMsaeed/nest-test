@@ -2,8 +2,8 @@ import { ApiPropertyOptional } from '@nestjs/swagger';
 import { Prisma } from '@prisma/client';
 import { Transform } from 'class-transformer';
 import { IsArray, IsEnum, IsInt, IsOptional, IsString } from 'class-validator';
-import { ParseToInt } from 'src/core/decorators/transform.decorator';
-import PaginatedRequest from 'src/core/request/paginated.request';
+import { ParseToInt } from '../../core/decorators/transform.decorator';
+import PaginatedRequest from '../../core/request/paginated.request';
 
 export enum MembershipStatus {
   MEMBER = 'member',
